@@ -38,3 +38,5 @@ allSection.forEach(function(section) {
   section.classList.add('section-hidden')
 })
 
+console.log('Project Github')
+
