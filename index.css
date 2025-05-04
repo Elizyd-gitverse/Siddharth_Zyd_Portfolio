@@ -145,8 +145,6 @@ body {
 .sec-pad-2 {
     align-items: center;
     gap: 2.8rem;
-    height: 100vh;
-
     padding: 10rem 20rem;
     background: #d0ebff;
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
