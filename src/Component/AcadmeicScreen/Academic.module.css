@@ -1,0 +1,100 @@
+.academic {
+    background-color: var(--greenBackground);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+    position: relative;
+}
+
+.academic ul {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.academic h2 {
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+
+.academic ul li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    row-gap: 0.5rem;
+    column-gap: 2rem;
+}
+
+li div {
+    grid-column: 2 / -1;
+}
+
+li h1 {
+    font-size: 1.8rem;
+}
+
+li p {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+     margin-left: 1.5rem;
+}
+
+.academic img {
+    width: 60%;
+    border-radius: 1.1rem;
+    align-self: center;
+}
+
+.headIcon {
+    background-color: var(--secondaryColor);
+}
+
+/* BOX SKILLS */
+.box {
+    position: absolute;
+    top: -50rem;
+    color: #1c1a1a;
+    width: 40rem;
+    padding: 4rem 0;
+    background-color: var(--redBackground);
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 2rem 0 0.1rem var(--primaryColor);
+    transition: 1s all;
+}
+
+.box:hover {
+    transform: translateY(1.8rem);
+    box-shadow: 0 0.2rem 0 0.1rem var(--primaryColor);
+}
+
+.skills {
+   left: 10rem;
+}
+
+.hobbies {
+    right: 10rem
+}
+
+.iconChild {
+background-color: var(--primaryColor);
+}
+
+.box h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+    font-family: 'rubik';
+}
