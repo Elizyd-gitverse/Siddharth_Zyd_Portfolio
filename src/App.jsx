@@ -7,7 +7,6 @@ import Project from "./Component/ProjectScreen/Project";
 
 export default function App() {
    const [isIntersect, setIsIntersect] = useState(false)
-   console.log(isIntersect)
 
   return (
       <div>
