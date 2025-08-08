@@ -29,7 +29,7 @@ function List({acadObj}) {
   return (
     <li>
         <ion-icon className={`icon iconsmall ${style.headIcon}`}  name={acadObj.iconName}></ion-icon> 
-        <h1>{acadObj.Board}</h1>
+        <h2>{acadObj.Board}</h2>
         <div>
            <h2>{acadObj.school}</h2>
            <p>Result: {acadObj.score}%</p>
