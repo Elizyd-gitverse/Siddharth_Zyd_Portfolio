@@ -2,8 +2,9 @@
 import style from  './NavBar.module.css'
 
 export default function NavBar({isIntersect}) {
+
     return (
-        <div className={`${style.nav} ${isIntersect ? '' : 'sticky'}`}>
+        <div className={`${style.nav} ${isIntersect ? style.sticky : ''}`}>
             <p>SIDDHARTH ELIGETI</p>
             <nav className={style.navLinks}>
                 <a href='#home'>HOME</a>

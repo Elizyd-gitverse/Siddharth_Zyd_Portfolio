@@ -59,3 +59,7 @@
     transform: translate(-1.5rem, 1.5rem);
     box-shadow: -0.2rem 0.2rem 0 0 #1971c2;
 }
+
+.popup {
+    animation: global(popup) 1s linear;
+}

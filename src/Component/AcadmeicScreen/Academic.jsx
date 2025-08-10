@@ -2,21 +2,26 @@ import style from './Academic.module.css'
 import HobbiesBox from './Hobbies';
 import SkillsBox from './skills';
 import acadArr from './AcadData';
+import useInterObsHook from '../../Hooks/useInterObsHook';
+
+
 
 
 
 export default function Academic() {
+    const {ref, isIntersect} = useInterObsHook()
+
     return (
-        <section id='academic' className={style.academic}>
-            <div>
-                <ion-icon className={`icon ${style.headIcon}`} name="school"></ion-icon>
+        <section id='academic' className={style.academic} ref={ref}>
+            <div className={isIntersect ? style.slideright : ''}>
+                <ion-icon ref={ref} className={`icon ${style.headIcon}`} name="school"></ion-icon>
                 <h1 className='sectionHeader'>ACADEMIC</h1>
                 <ul>
                    {acadArr.map(acadObj => <List acadObj={acadObj} key={acadObj.iconName}/>)} 
-                   <ListCourse />
+                   <ListCourse/>
                 </ul>
             </div>
-            <Image />
+            <Image isIntersect={isIntersect}/>
             <SkillsBox /> 
             <HobbiesBox />
         </section>
@@ -54,9 +59,9 @@ function ListCourse() {
 }
 
 //Image
-function Image() {
+function Image({isIntersect}) {
   return (
-    <img src='https://images.stockcake.com/public/e/2/f/e2f7f967-b5bf-4bf7-9ec2-f351863e3c9b_medium/sakura-graduate-celebrates-stockcake.jpg' alt='graduate' />
+    <img src='https://images.stockcake.com/public/e/2/f/e2f7f967-b5bf-4bf7-9ec2-f351863e3c9b_medium/sakura-graduate-celebrates-stockcake.jpg' alt='graduate' className={isIntersect ? style.flipLeft : ''}/>
   )
 }
 

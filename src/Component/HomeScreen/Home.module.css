@@ -21,6 +21,7 @@
     font-weight: 900;
     text-align: center;
     color: #fff;
+    animation: global(slideright) 0.8s linear;
 }
 
 .header p {
@@ -32,6 +33,8 @@
     color: rgba(250, 250, 250, 0.841);
     padding: 2rem 12rem;
     line-height: 1.4;
+    animation: global(slideleft) 1s linear;
 }
+
 
 

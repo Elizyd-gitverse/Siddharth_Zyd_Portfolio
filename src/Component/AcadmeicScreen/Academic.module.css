@@ -8,6 +8,14 @@
     position: relative;
 }
 
+.slideright {
+    animation: global(slideright) 0.8s linear;
+}
+
+.flipLeft {
+   animation: global(flipLeft) 0.8s linear; 
+}
+
 .academic ul {
     display: flex;
     justify-items: flex-start;
@@ -67,6 +75,7 @@ li p {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    animation: global(slideup) 1s linear;
     box-shadow: 0 2rem 0 0.1rem var(--primaryColor);
     transition: 1s all;
 }
@@ -81,7 +90,7 @@ li p {
 }
 
 .hobbies {
-    right: 10rem
+    right: 10rem;
 }
 
 .iconChild {
