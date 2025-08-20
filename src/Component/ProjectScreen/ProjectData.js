@@ -1,4 +1,10 @@
 const projArr = [
+     { 
+      title: 'FAST PIZZA ( React )', 
+      img: './fastPizza.png',
+      link: 'https://fast-pizza-zyd.netlify.app/'
+    },
+
     { 
       title: 'TO PACK ITEMS ( React )', 
       img: './Trip.png',
@@ -40,8 +46,6 @@ const projArr = [
       img: './dark&light.png',
       link: 'https://dark-light-elizyd.netlify.app/'
     },
-
-
 ];
 
 export default projArr
