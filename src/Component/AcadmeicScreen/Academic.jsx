@@ -13,7 +13,7 @@ export default function Academic() {
 
     return (
         <section id='academic' className={style.academic} ref={ref}>
-            <div className={isIntersect ? style.slideright : ''}>
+            <div className={` ${isIntersect ? style.slideright : ''}`}>
                 <ion-icon ref={ref} className={`icon ${style.headIcon}`} name="school"></ion-icon>
                 <h1 className='sectionHeader'>ACADEMIC</h1>
                 <ul>
@@ -48,11 +48,11 @@ function ListCourse() {
   return (
     <li>
        <ion-icon className={`icon iconsmall ${style.headIcon}`}  name="logo-octocat"></ion-icon> 
-       <h1>LEARNING & CERTIFICATE</h1>  
+       <h2>LEARNING & CERTIFICATE</h2>  
        <div>
-         <h2>1. HTML5 & CSS3</h2>
-         <h2>2. JavaScript (ES6+)</h2>
-         <h2>3. React</h2>
+         <h3>1. HTML5 & CSS3</h3>
+         <h3>2. JavaScript (ES6+)</h3>
+         <h3>3. React</h3>
        </div>
     </li>
   )

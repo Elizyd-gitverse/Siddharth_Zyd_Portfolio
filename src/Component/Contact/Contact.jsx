@@ -25,8 +25,8 @@ export default function Contact() {
                 <p className={style.copyright}>Copyright &copy; {new Date().getFullYear()} Siddharth Eligeti Portfolio</p>
              </div>
              <div className={style.git}>
-                <a href="#home"><ion-icon name="logo-github" class={style.gitIcon}></ion-icon></a>
-               <p className='sectionHeader'>Find My Github link for each Project in my Resume</p>
+                <a href="https://github.com/Elizyd-gitverse" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-github" class={style.gitIcon}></ion-icon></a>
+               <p className='sectionHeader'>&larr; GitHub Link</p>
              </div>          
         </footer>
     )

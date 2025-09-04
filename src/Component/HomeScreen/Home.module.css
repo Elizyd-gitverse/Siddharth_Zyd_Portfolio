@@ -12,8 +12,8 @@
 }
 
 .header {
-    width: 90rem;
-    margin-top: 13rem;
+    max-width: 90rem;
+    transform: translateY(30%);
 }
 
 .header h1 {
@@ -34,6 +34,40 @@
     padding: 2rem 12rem;
     line-height: 1.4;
     animation: global(slideleft) 1s linear;
+}
+
+/* MOBILE SCRREN */
+
+@media(max-width: 30em) {
+    
+ html {
+    font-size: 35%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    line-height: 1.6;
+ }
+
+ .home {
+    height: 90vh;
+    align-items: start;
+ }
+
+ .header {
+    transform: translateY(120%);
+}
+
+ .header h1 {
+   font-size: 4rem;
+ }
+
+ 
+.header p {
+    font-size: 1.4rem;
+}
+
+
+
+
 }
 
 

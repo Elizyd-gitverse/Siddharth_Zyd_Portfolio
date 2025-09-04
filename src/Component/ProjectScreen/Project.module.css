@@ -63,3 +63,27 @@
 .popup {
     animation: global(popup) 1s linear;
 }
+
+@media(max-width: 35em) {
+ .project {
+    display: flex; 
+    flex-direction: column;
+    row-gap: 3rem;
+ }
+
+ .project ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+ }
+
+ .project ul li p,
+ .project ul li a {
+    font-size: 1.4rem;
+ }
+
+ .project ul li a img {
+    width: 15rem;
+    height: 13rem;
+
+ }
+}

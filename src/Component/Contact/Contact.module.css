@@ -1,7 +1,7 @@
 .contact {
     /* height: 25vh; */
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+    position: relative;
+    padding: 5rem;
     background-color: #212529;
     color: #fcfcfc; 
     display: flex;
@@ -40,7 +40,7 @@
 .git {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .contact a {
@@ -57,9 +57,41 @@
 }
 
 .copyright {
-    margin-top: auto;
     font-size: 1.4rem;
     font-family: 'rubik';
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+@media(max-width: 35em) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    gap: 3rem;
+ }
+
+ .copyright {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.1rem;
+ }
+
+ .contact ul {
+    margin-bottom: 2rem;
+ }
+
+ .iconCont {
+  font-size: 2rem;  
+ }
+
+ .gitIcon {
+    font-size: 5rem;
+  }
+ 
 }
 
 
