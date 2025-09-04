@@ -77,13 +77,14 @@ li p {
     align-items: center;
     gap: 2rem;
     animation: global(slideup) 1s linear;
-    box-shadow: 0 2rem 0 0.1rem var(--primaryColor);
+    box-shadow: 0 0 1rem 0.1rem var(--primaryColor);
     transition: 1s all;
 }
 
 .box:hover {
-    transform: translateY(1.8rem);
-    box-shadow: 0 0.2rem 0 0.1rem var(--primaryColor);
+    transform: translateY(-1.8rem);
+    z-index: 1000;
+    box-shadow: 0 0 0.2rem 1rem var(--primaryColor);
 }
 
 .skills {
@@ -120,6 +121,14 @@ background-color: var(--primaryColor);
     padding: 1rem 0;
  }
 
+ .box h1 {
+    font-size: 2em;
+}
+
+.box ul {
+    font-size: 1.4rem;
+}
+
  .skills {
    top: -55rem;
    left: 2rem;
@@ -152,7 +161,7 @@ background-color: var(--primaryColor);
   }
 
     .academic ul li {
-     column-gap: 1rem;
+     column-gap: 2.5rem;
   }
 
   .academic img {

@@ -57,16 +57,14 @@
 }
 
  .header h1 {
-   font-size: 4rem;
+   font-size: 3rem;
  }
 
- 
 .header p {
     font-size: 1.4rem;
+    padding: 2rem 3rem;
+    /* text-align: left; */
 }
-
-
-
 
 }
 
