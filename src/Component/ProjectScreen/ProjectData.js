@@ -42,7 +42,7 @@ const projArr = [
     },
 
     { 
-      title: 'DARK & LIGHT THEME SWITCH ( HTML CSS JS )', 
+      title: 'DARK & LIGHT ( HTML CSS JS )', 
       img: './dark&light.png',
       link: 'https://dark-light-elizyd.netlify.app/'
     },

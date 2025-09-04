@@ -41,29 +41,32 @@
 @media(max-width: 35em) {
     
  html {
-    font-size: 35%;
+    font-size: 40%;
     scroll-behavior: smooth;
     overflow-x: hidden;
     line-height: 1.6;
  }
 
  .home {
+    position: relative;
     height: 90vh;
     align-items: start;
  }
 
  .header {
-    transform: translateY(120%);
+    position: absolute;
+    width: 200rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
  .header h1 {
-   font-size: 2.5rem;
+   font-size: 5rem;
  }
 
 .header p {
-    font-size: 1.4rem;
-    padding: 2rem 3rem;
-    /* text-align: left; */
+    font-size: 1.8rem;
 }
 
 }

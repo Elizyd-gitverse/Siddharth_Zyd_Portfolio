@@ -131,11 +131,11 @@ background-color: var(--primaryColor);
 
  .skills {
    top: -55rem;
-   left: 2rem;
+   left: 5rem;
  }
 
  .hobbies {
-    right: 2rem;
+    right: 5rem;
  }
 
  .academic {
@@ -160,12 +160,12 @@ background-color: var(--primaryColor);
     padding-left: 1.25rem;
   }
 
-    .academic ul li {
+  .academic ul li {
      column-gap: 2.5rem;
   }
 
   .academic img {
-    width: 100%
+    width: 80%
   }
 
  }

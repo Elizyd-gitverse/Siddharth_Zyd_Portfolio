@@ -77,6 +77,10 @@
     grid-template-columns: repeat(2, 1fr)
  }
 
+  .project ul li {
+    gap: 1.5rem;
+ }
+
  .project ul li p,
  .project ul li a {
     font-size: 1.4rem;
