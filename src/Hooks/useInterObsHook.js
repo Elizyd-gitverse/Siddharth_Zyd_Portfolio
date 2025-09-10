@@ -19,7 +19,7 @@ export default function useInterObsHook() {
 
        obs.observe(target)
 
-       return () => obs.unobserve(target)
+       return () => obs.disconnect(target)
      
     }, [isIntersect])
 

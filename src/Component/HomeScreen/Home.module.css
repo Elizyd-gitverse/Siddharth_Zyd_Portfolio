@@ -1,3 +1,7 @@
+.hero {
+    position: relative;
+}
+
 .home {
     height: 85vh;
     width: 100vw;
@@ -20,17 +24,15 @@
     font-size: 6rem;
     font-weight: 900;
     text-align: center;
-    color: #fff;
+    color: var(--primaryColor);
     animation: global(slideright) 0.8s linear;
 }
 
 .header p {
-    /* width: 70rem; */
-    color: #fff;
     font-size: 1.8rem;
     text-align: center;
     font-family: 'rubik';
-    color: rgba(250, 250, 250, 0.841);
+    color: rgb(250, 250, 250);
     padding: 2rem 12rem;
     line-height: 1.4;
     animation: global(slideleft) 1s linear;
@@ -41,11 +43,12 @@
 @media(max-width: 35em) {
     
  html {
-    font-size: 40%;
+    font-size: 50%;
     scroll-behavior: smooth;
     overflow-x: hidden;
     line-height: 1.6;
  }
+
 
  .home {
     position: relative;
@@ -62,11 +65,12 @@
 }
 
  .header h1 {
-   font-size: 5rem;
+   font-size: 4rem;
  }
 
 .header p {
     font-size: 1.8rem;
+    margin: 1rem 7rem;
 }
 
 }

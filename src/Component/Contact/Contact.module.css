@@ -40,7 +40,7 @@
 .git {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .contact a {
@@ -90,6 +90,10 @@
 
  .gitIcon {
     font-size: 5rem;
+  }
+
+  .git {
+    align-items: normal;
   }
  
 }

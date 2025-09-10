@@ -1,15 +1,18 @@
 
+import { Link } from 'react-router-dom'
 import style from  './NavBar.module.css'
 
-export default function NavBar({isIntersect}) {
+
+export default function NavBar() {
 
     return (
-        <div className={`${style.nav} ${isIntersect ? style.sticky : ''}`}>
-            <p>SIDDHARTH ELIGETI</p>
+        <div className={`${style.nav} ${style.sticky}`}>
+            <Link to='/' className={style.author}><p>SIDDHARTH ELIGETI ~ 🚀</p></Link>
             <nav className={style.navLinks}>
-                <a href='#home'>HOME</a>
-                <a href='#academic'>ACADEMICS</a>
-                <a href='#project'>PROJECTS</a>
+                <Link to='/'>HOME</Link>
+                <Link to='/academic'>ACADEMICS</Link>
+                <Link to='/projects'>PROJECTS</Link>
+                {/* <a href='#project'>PROJECTS</a> */}
                 <a href='#contact'>CONTACT ME</a>
             </nav>
         </div>

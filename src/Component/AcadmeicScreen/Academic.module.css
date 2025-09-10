@@ -66,7 +66,7 @@ li p {
 /* BOX SKILLS */
 .box {
     position: absolute;
-    top: -40rem;
+    top: 40rem;
     color: #1c1a1a;
     width: 30rem;
     padding: 2rem 0;
@@ -119,6 +119,7 @@ background-color: var(--primaryColor);
 
  .box {
     padding: 1rem 0;
+    top: auto;
  }
 
  .box h1 {
@@ -130,12 +131,13 @@ background-color: var(--primaryColor);
 }
 
  .skills {
-   top: -55rem;
    left: 5rem;
+   bottom: 20rem;
  }
 
  .hobbies {
     right: 5rem;
+    bottom: -2rem;
  }
 
  .academic {

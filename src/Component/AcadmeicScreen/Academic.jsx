@@ -1,11 +1,6 @@
 import style from './Academic.module.css'
-import HobbiesBox from './Hobbies';
-import SkillsBox from './skills';
 import acadArr from './AcadData';
 import useInterObsHook from '../../Hooks/useInterObsHook';
-
-
-
 
 
 export default function Academic() {
@@ -14,7 +9,7 @@ export default function Academic() {
     return (
         <section id='academic' className={style.academic} ref={ref}>
             <div className={` ${isIntersect ? style.slideright : ''}`}>
-                <ion-icon ref={ref} className={`icon ${style.headIcon}`} name="school"></ion-icon>
+                <ion-icon className={`icon ${style.headIcon}`} name="school"></ion-icon>
                 <h1 className='sectionHeader'>ACADEMIC</h1>
                 <ul>
                    {acadArr.map(acadObj => <List acadObj={acadObj} key={acadObj.iconName}/>)} 
@@ -22,8 +17,6 @@ export default function Academic() {
                 </ul>
             </div>
             <Image isIntersect={isIntersect}/>
-            <SkillsBox /> 
-            <HobbiesBox />
         </section>
     )
 }
