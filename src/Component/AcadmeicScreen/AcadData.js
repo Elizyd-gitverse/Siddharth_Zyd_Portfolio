@@ -18,4 +18,6 @@ const acadArr = [
     }
 ];
 
+console.log("new folder")
+
 export default acadArr
